@@ -28,9 +28,33 @@ bool initialize_window(void) {
 	return true;
 }
 
+void setup(void) {
+
+}
+
+void process_input(void) {
+
+}
+
+void update(void) {
+
+}
+
+void render(void) {
+	
+}
+
 int main() {
 	// Create an SDL Window
 	is_running = initialize_window();
+
+	setup();
+
+	while(true) {
+		process_input();
+		update();
+		render();
+	}
 	
 	return 0;
 }
